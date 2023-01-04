@@ -1,5 +1,5 @@
 const myVar = 'hi' || 9
-console.log(typeof myVar)
+const str = 'hello'
 
 const myFunc = (a: number)=>{
     return a - 22

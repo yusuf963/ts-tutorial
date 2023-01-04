@@ -1,0 +1,5 @@
+{
+    "all": true,
+    "include": ["src/**/*.{ts,tsx,js,jsx}"],
+    "exclude": ["src/**/*.{css,sass,scss, *spec.ts, *spec.tsx, *test.ts, *test.tsx}"]
+}
