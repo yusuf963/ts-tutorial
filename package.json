@@ -1,0 +1,21 @@
+{
+  "name": "type-regex",
+  "version": "1.0.0",
+  "description": "This is a simple regex to check if a string is a valid type",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc -w",
+    "comp": "npx tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-yusuf963:yusuf963/ts-tutorial.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.3",
+    "typescript": "^4.9.4"
+  }
+}
