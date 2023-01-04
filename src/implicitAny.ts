@@ -1,4 +1,11 @@
+/*
+Read through the "Migrating from JavaScript" article in the TypeScript 
+docs and see if you can find how to fix these TypeScript errors.
+*/
+
 // import assert from 'assert';
+
+
 import { expect } from 'chai'
 import { it } from 'mocha'
 const addNum =(a: number, b: number)=>{
