@@ -1,3 +1,13 @@
+TypeScript official website
+https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html
+
+
+TypeScript official github
+https://github.com/microsoft/TypeScript
+
+
+
+Matt tutorial
 https://github.com/total-typescript/beginners-typescript-tutorial/tree/main/src
 
 
