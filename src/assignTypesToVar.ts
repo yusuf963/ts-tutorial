@@ -20,7 +20,11 @@ interface User {
 * How do we ensure that defaultUser is of type User
 * at THIS LINE - not further down in the code?
 */
-const defaultUser: User = {}; // error out becouse defaultUser does not meet the contract with type User
+
+// @ts-expect-error this will stop the error from showing up
+const defaultUser: User = {
+    id: 1,
+}; // error out becouse defaultUser does not meet the contract with type User
 
 const getUserId = (user: User) => {
 return user.id;

@@ -13,19 +13,19 @@ export const getName = (first: string, last?: string, ...arg:string[]) => {
   return `${first} ${last} ${arg}`;
 };
 
-it.only("Should work with just the first name", () => {
+it("Should work with just the first name", () => {
   const name = getName("Matt");
 
   expect(name).to.deep.equal("Matt");
 });
 
-it.only("Should work with the first and last name", () => {
+it("Should work with the first and last name", () => {
   const name = getName("Matt", "Pocock");
   expect(name).to.deep.equal("Matt Pocock");
 });
 
 
-it.only("Should work with the first and last name and ..arg", () => {
+it("Should work with the first and last name and ..arg", () => {
     const name = getName("Matt", "Pocock", "a", "b", "c");
 
     assert.equal(name, "Matt Pocock a,b,c");
