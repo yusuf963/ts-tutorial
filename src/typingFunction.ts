@@ -1,0 +1,5 @@
+/*
+Challenge
+Your challenge is to visit the TypeScript Docs and work out how
+ to appropriately type the onFocusChange function.
+*/
