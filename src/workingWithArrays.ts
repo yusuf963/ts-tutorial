@@ -34,7 +34,7 @@ interface UserX {
     posts: [
       {
         id: 1,
-        title: "How I eat so much cheese",
+        title: "How I eat so much apple",
       },
       {
         id: 2,

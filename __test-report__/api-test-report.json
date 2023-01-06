@@ -1,14 +1,14 @@
 {
   "stats": {
-    "suites": 4,
-    "tests": 23,
-    "passes": 23,
+    "suites": 5,
+    "tests": 24,
+    "passes": 24,
     "pending": 0,
     "failures": 0,
-    "start": "2023-01-06T12:12:46.144Z",
-    "end": "2023-01-06T12:12:46.152Z",
-    "duration": 8,
-    "testsRegistered": 23,
+    "start": "2023-01-06T14:16:44.808Z",
+    "end": "2023-01-06T14:16:44.817Z",
+    "duration": 9,
+    "testsRegistered": 24,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "18431aee-06d2-4598-a1d2-d3e19fb5705c",
+      "uuid": "c560465e-6e25-4d8b-8652-628d3bfc032c",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -38,8 +38,8 @@
           "context": null,
           "code": "expect(getUserId(defaultUser)).to.deep.equal(1);",
           "err": {},
-          "uuid": "1746a083-0ad5-4bb7-aae3-08820333a73a",
-          "parentUUID": "18431aee-06d2-4598-a1d2-d3e19fb5705c",
+          "uuid": "da07cf70-96ca-45e6-aec6-651a0c69579f",
+          "parentUUID": "c560465e-6e25-4d8b-8652-628d3bfc032c",
           "isHook": false,
           "skipped": false
         },
@@ -56,8 +56,8 @@
           "context": null,
           "code": "expect(user).to.have.property(\"lastName\");",
           "err": {},
-          "uuid": "c7f8db4d-0918-4c97-a773-16bf2d3128d4",
-          "parentUUID": "18431aee-06d2-4598-a1d2-d3e19fb5705c",
+          "uuid": "14806438-b603-41ca-a2f9-cc651b011711",
+          "parentUUID": "c560465e-6e25-4d8b-8652-628d3bfc032c",
           "isHook": false,
           "skipped": false
         },
@@ -65,7 +65,7 @@
           "title": "Should return a valid user",
           "fullTitle": "Should return a valid user",
           "timedOut": false,
-          "duration": 0,
+          "duration": 1,
           "state": "passed",
           "speed": "fast",
           "pass": true,
@@ -74,8 +74,8 @@
           "context": null,
           "code": "expect(user.id).to.be.a(\"number\");\nexpect(user.firstName).to.be.a(\"string\");\nexpect(user.lastName).to.be.a(\"string\");\nexpect(user.role).to.be.oneOf([\"super-admin\", \"admin\", \"user\", \"dw\"]);\nexpect(user.posts[0].id).to.be.a(\"number\");\nexpect(user.posts[0].title).to.be.a(\"string\");",
           "err": {},
-          "uuid": "45d173a6-5a00-400b-8f87-8c0047f553c3",
-          "parentUUID": "18431aee-06d2-4598-a1d2-d3e19fb5705c",
+          "uuid": "7f6285ef-d7f4-455a-939a-ae0c7ed7ce02",
+          "parentUUID": "c560465e-6e25-4d8b-8652-628d3bfc032c",
           "isHook": false,
           "skipped": false
         },
@@ -92,8 +92,8 @@
           "context": null,
           "code": "expect(user.role).to.be.oneOf(['admin']);",
           "err": {},
-          "uuid": "2cdca68e-c947-4b7d-a295-03e6ef002a89",
-          "parentUUID": "18431aee-06d2-4598-a1d2-d3e19fb5705c",
+          "uuid": "28fa1344-b6b6-499c-882f-c649f255012b",
+          "parentUUID": "c560465e-6e25-4d8b-8652-628d3bfc032c",
           "isHook": false,
           "skipped": false
         },
@@ -110,8 +110,8 @@
           "context": null,
           "code": "const result = addNum(2, 3);\nexpect(result).to.equal(5);",
           "err": {},
-          "uuid": "70fb6dc1-76c0-4719-98a1-fc21ce40b6cb",
-          "parentUUID": "18431aee-06d2-4598-a1d2-d3e19fb5705c",
+          "uuid": "715702cd-bd69-483f-b39d-64083c537dcd",
+          "parentUUID": "c560465e-6e25-4d8b-8652-628d3bfc032c",
           "isHook": false,
           "skipped": false
         },
@@ -119,7 +119,7 @@
           "title": "should add two objects",
           "fullTitle": "should add two objects",
           "timedOut": false,
-          "duration": 0,
+          "duration": 1,
           "state": "passed",
           "speed": "fast",
           "pass": true,
@@ -128,8 +128,8 @@
           "context": null,
           "code": "const result = addObject({ name: 'bob' }, { age: 22 });\nexpect(result).to.deep.equal({ name: 'bob', age: 22 });",
           "err": {},
-          "uuid": "2fed2a1e-6510-48f4-a385-7047ea9a13c9",
-          "parentUUID": "18431aee-06d2-4598-a1d2-d3e19fb5705c",
+          "uuid": "d5e4be68-495b-4d05-b823-15754d35c125",
+          "parentUUID": "c560465e-6e25-4d8b-8652-628d3bfc032c",
           "isHook": false,
           "skipped": false
         },
@@ -146,8 +146,8 @@
           "context": null,
           "code": "const result = joinArray2([1, 2], [3, 4]);\nexpect(result).to.deep.equal([1, 2, 3, 4]);",
           "err": {},
-          "uuid": "b8b3c08c-c298-43d8-910f-9d1b27db9400",
-          "parentUUID": "18431aee-06d2-4598-a1d2-d3e19fb5705c",
+          "uuid": "004d16d5-9636-475b-899b-a44fd9ef61a9",
+          "parentUUID": "c560465e-6e25-4d8b-8652-628d3bfc032c",
           "isHook": false,
           "skipped": false
         },
@@ -164,8 +164,8 @@
           "context": null,
           "code": "const result = joinArray2(['1', '2'], ['3', '4']);\nexpect(result).to.deep.equal(['1', '2', '3', '4']);",
           "err": {},
-          "uuid": "b64045d3-4b66-42fa-9917-1e9a10873680",
-          "parentUUID": "18431aee-06d2-4598-a1d2-d3e19fb5705c",
+          "uuid": "7adea454-e40d-454d-8b56-32543fec0ad5",
+          "parentUUID": "c560465e-6e25-4d8b-8652-628d3bfc032c",
           "isHook": false,
           "skipped": false
         },
@@ -182,8 +182,8 @@
           "context": null,
           "code": "const result = addTwoNumber({ first: 1, second: 2 });\nexpect(result).to.equal(3);",
           "err": {},
-          "uuid": "86b6ef8d-9361-43de-b821-eb3ae3e7a6ea",
-          "parentUUID": "18431aee-06d2-4598-a1d2-d3e19fb5705c",
+          "uuid": "47a32676-6bbd-4e7e-a2b7-0d57faa96e78",
+          "parentUUID": "c560465e-6e25-4d8b-8652-628d3bfc032c",
           "isHook": false,
           "skipped": false
         },
@@ -200,8 +200,8 @@
           "context": null,
           "code": "const name = getName(\"Matt\");\nexpect(name).to.deep.equal(\"Matt\");",
           "err": {},
-          "uuid": "f69cdb23-3111-4f10-97ab-2fc5ab64c21a",
-          "parentUUID": "18431aee-06d2-4598-a1d2-d3e19fb5705c",
+          "uuid": "e52cc76b-1df5-4a6a-8bfa-7ce1ee5a8720",
+          "parentUUID": "c560465e-6e25-4d8b-8652-628d3bfc032c",
           "isHook": false,
           "skipped": false
         },
@@ -218,8 +218,8 @@
           "context": null,
           "code": "const name = getName(\"Matt\", \"Pocock\");\nexpect(name).to.deep.equal(\"Matt Pocock\");",
           "err": {},
-          "uuid": "6683d22b-ce66-4557-bbdc-7fc79f680c37",
-          "parentUUID": "18431aee-06d2-4598-a1d2-d3e19fb5705c",
+          "uuid": "c55aa476-1fa1-4f25-aa34-e93fc63680a2",
+          "parentUUID": "c560465e-6e25-4d8b-8652-628d3bfc032c",
           "isHook": false,
           "skipped": false
         },
@@ -236,8 +236,8 @@
           "context": null,
           "code": "const name = getName(\"Matt\", \"Pocock\", \"a\", \"b\", \"c\");\nassert.equal(name, \"Matt Pocock a,b,c\");",
           "err": {},
-          "uuid": "08a3e181-f89a-4db0-aa05-ca0adbb78775",
-          "parentUUID": "18431aee-06d2-4598-a1d2-d3e19fb5705c",
+          "uuid": "1cfc772d-8597-435d-975d-c9862136292a",
+          "parentUUID": "c560465e-6e25-4d8b-8652-628d3bfc032c",
           "isHook": false,
           "skipped": false
         },
@@ -254,8 +254,8 @@
           "context": null,
           "code": "const name = getName({\n    first: \"Matt\",\n});\nexpect(name).to.equal(\"Matt\");",
           "err": {},
-          "uuid": "1d65eb40-887d-4cd0-a631-ab267101a1f3",
-          "parentUUID": "18431aee-06d2-4598-a1d2-d3e19fb5705c",
+          "uuid": "25e12f1c-7514-4a1b-a6bc-5125d82ccfb0",
+          "parentUUID": "c560465e-6e25-4d8b-8652-628d3bfc032c",
           "isHook": false,
           "skipped": false
         },
@@ -272,8 +272,8 @@
           "context": null,
           "code": "const name = getName({\n    first: \"Matt\",\n    last: \"Pocock\",\n});\nexpect(name).to.equal(\"Matt Pocock\");",
           "err": {},
-          "uuid": "0aeb6016-944f-4cfc-900a-a524b0fe8a6c",
-          "parentUUID": "18431aee-06d2-4598-a1d2-d3e19fb5705c",
+          "uuid": "7638d30c-0195-4b4c-b323-2bd2d7898701",
+          "parentUUID": "c560465e-6e25-4d8b-8652-628d3bfc032c",
           "isHook": false,
           "skipped": false
         },
@@ -290,15 +290,15 @@
           "context": null,
           "code": "const name = getNameY({\n    first: \"Matt\",\n    last: \"Pocock\",\n});\nassert.equal(name, \"Matt Pocock\");",
           "err": {},
-          "uuid": "b0da032a-5abd-42be-b8be-f64c8321aa25",
-          "parentUUID": "18431aee-06d2-4598-a1d2-d3e19fb5705c",
+          "uuid": "f7729761-fabd-4730-879b-5e1762a01ce4",
+          "parentUUID": "c560465e-6e25-4d8b-8652-628d3bfc032c",
           "isHook": false,
           "skipped": false
         }
       ],
       "suites": [
         {
-          "uuid": "ca9c65c1-3780-43e1-844c-9e034269829b",
+          "uuid": "37322584-4d6f-47dd-86e1-0d90de01892a",
           "title": "Assign dynamic keys to object",
           "fullFile": "/Users/alchem01/dev/tutorials/typescript/ts-tutorial/src/assigningdynamicKeysToObject.ts",
           "file": "/src/assigningdynamicKeysToObject.ts",
@@ -318,8 +318,8 @@
               "context": null,
               "code": "const cache = createCache();\ncache.add(\"123\", \"Matt\");\nexpect(cache.cache[\"123\"]).to.be.equal(\"Matt\");",
               "err": {},
-              "uuid": "b4195ca8-67bb-4e6d-892f-57608cb007a1",
-              "parentUUID": "ca9c65c1-3780-43e1-844c-9e034269829b",
+              "uuid": "38212959-0707-4b6b-a93d-d07f334ec727",
+              "parentUUID": "37322584-4d6f-47dd-86e1-0d90de01892a",
               "isHook": false,
               "skipped": false
             },
@@ -336,16 +336,16 @@
               "context": null,
               "code": "const cache = createCache();\ncache.add(\"123\", \"Matt\");\ncache.remove(\"123\");\nexpect(cache.cache[\"123\"]).to.be.equal(undefined);",
               "err": {},
-              "uuid": "798387f4-d3d5-4829-884f-ce9f6538d3de",
-              "parentUUID": "ca9c65c1-3780-43e1-844c-9e034269829b",
+              "uuid": "f9b5e110-8628-4f61-8c6e-3474b37cead7",
+              "parentUUID": "37322584-4d6f-47dd-86e1-0d90de01892a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "b4195ca8-67bb-4e6d-892f-57608cb007a1",
-            "798387f4-d3d5-4829-884f-ce9f6538d3de"
+            "38212959-0707-4b6b-a93d-d07f334ec727",
+            "f9b5e110-8628-4f61-8c6e-3474b37cead7"
           ],
           "failures": [],
           "pending": [],
@@ -356,7 +356,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "93ad55a5-d2df-4fdf-8725-3d169b329b9e",
+          "uuid": "368b9607-16e8-430a-a3e0-93d580c1c4ca",
           "title": "Narrowing down union types",
           "fullFile": "/Users/alchem01/dev/tutorials/typescript/ts-tutorial/src/narrowingDownUnionTypes.ts",
           "file": "/src/narrowingDownUnionTypes.ts",
@@ -376,8 +376,8 @@
               "context": null,
               "code": "expect(coerceAmount({ amount: 20 })).to.be.equal(20);",
               "err": {},
-              "uuid": "02f68831-a1ab-405a-b2ef-6e28af16e1d2",
-              "parentUUID": "93ad55a5-d2df-4fdf-8725-3d169b329b9e",
+              "uuid": "ce5933ae-a081-4244-a32b-1289ce9b13d0",
+              "parentUUID": "368b9607-16e8-430a-a3e0-93d580c1c4ca",
               "isHook": false,
               "skipped": false
             },
@@ -394,16 +394,16 @@
               "context": null,
               "code": "expect(coerceAmount(20)).to.be.equal(20);",
               "err": {},
-              "uuid": "e39d6289-8170-4985-b94e-80941ca2510b",
-              "parentUUID": "93ad55a5-d2df-4fdf-8725-3d169b329b9e",
+              "uuid": "92bb555e-a159-43b7-8af8-8767897a14e6",
+              "parentUUID": "368b9607-16e8-430a-a3e0-93d580c1c4ca",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "02f68831-a1ab-405a-b2ef-6e28af16e1d2",
-            "e39d6289-8170-4985-b94e-80941ca2510b"
+            "ce5933ae-a081-4244-a32b-1289ce9b13d0",
+            "92bb555e-a159-43b7-8af8-8767897a14e6"
           ],
           "failures": [],
           "pending": [],
@@ -414,7 +414,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "d32c3fed-044e-4e4c-88d4-23599e20a168",
+          "uuid": "97dfff74-d607-495f-ba9c-b777cfad1f80",
           "title": "Passing Type Argument",
           "fullFile": "/Users/alchem01/dev/tutorials/typescript/ts-tutorial/src/passingTypeArguments.ts",
           "file": "/src/passingTypeArguments.ts",
@@ -434,8 +434,8 @@
               "context": null,
               "code": "expect(guitarists.has(\"Jimi Hendrix\")).to.equal(true);\nexpect(guitarists.has(\"Eric Clapton\")).to.equal(true);",
               "err": {},
-              "uuid": "eaa74847-36e8-4aaf-a5cb-72b4c749a18d",
-              "parentUUID": "d32c3fed-044e-4e4c-88d4-23599e20a168",
+              "uuid": "f9e1e3b9-fd84-46b8-819e-1a9b86848526",
+              "parentUUID": "97dfff74-d607-495f-ba9c-b777cfad1f80",
               "isHook": false,
               "skipped": false
             },
@@ -452,8 +452,8 @@
               "context": null,
               "code": "/*  // @ts-expect-error */\nguitarists.add(2);\nexpect(guitarists.has(2)).to.equal(true);",
               "err": {},
-              "uuid": "80d1fd6e-84f3-42e3-ab55-152cf27e2bc7",
-              "parentUUID": "d32c3fed-044e-4e4c-88d4-23599e20a168",
+              "uuid": "7259dc31-58b7-4d60-921a-1a864348c22d",
+              "parentUUID": "97dfff74-d607-495f-ba9c-b777cfad1f80",
               "isHook": false,
               "skipped": false
             },
@@ -470,17 +470,17 @@
               "context": null,
               "code": "const guitaristsAsArray = Array.from(guitarists);\nexpect(guitaristsAsArray).to.deep.equal([\n    \"Jimi Hendrix\",\n    \"Eric Clapton\",\n    2,\n]);\n//   type tests = [expect <Equal<typeof guitaristsAsArray, string[]>>];",
               "err": {},
-              "uuid": "a0930398-3763-4147-9790-b3c817d7877e",
-              "parentUUID": "d32c3fed-044e-4e4c-88d4-23599e20a168",
+              "uuid": "5d7f5ec3-0570-44ce-a58a-07cbb2e10b75",
+              "parentUUID": "97dfff74-d607-495f-ba9c-b777cfad1f80",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "eaa74847-36e8-4aaf-a5cb-72b4c749a18d",
-            "80d1fd6e-84f3-42e3-ab55-152cf27e2bc7",
-            "a0930398-3763-4147-9790-b3c817d7877e"
+            "f9e1e3b9-fd84-46b8-819e-1a9b86848526",
+            "7259dc31-58b7-4d60-921a-1a864348c22d",
+            "5d7f5ec3-0570-44ce-a58a-07cbb2e10b75"
           ],
           "failures": [],
           "pending": [],
@@ -491,7 +491,46 @@
           "_timeout": 10000
         },
         {
-          "uuid": "7f0a9257-f6ff-4ed5-9a75-f7788b174eea",
+          "uuid": "59759942-7ccc-4516-99a7-b9e3c01a6ce8",
+          "title": "Typing async function",
+          "fullFile": "/Users/alchem01/dev/tutorials/typescript/ts-tutorial/src/typingAsyncFunction.ts",
+          "file": "/src/typingAsyncFunction.ts",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should create the user, then get them",
+              "fullTitle": "Typing async function Should create the user, then get them",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "__awaiter(void 0, void 0, void 0, function* () {\n        const user = yield createThenGetUser(() => __awaiter(void 0, void 0, void 0, function* () { return \"123\"; }), (id) => __awaiter(void 0, void 0, void 0, function* () {\n            return ({\n                id,\n                firstName: \"Matt\",\n                lastName: \"Pocock\",\n            });\n        }));\n        expect(user).to.deep.equal({\n            id: \"123\",\n            firstName: \"Matt\",\n            lastName: \"Pocock\",\n        });\n    })",
+              "err": {},
+              "uuid": "a6fbc220-39af-456e-bf3a-eb9dac297588",
+              "parentUUID": "59759942-7ccc-4516-99a7-b9e3c01a6ce8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a6fbc220-39af-456e-bf3a-eb9dac297588"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        },
+        {
+          "uuid": "1d32264e-62f7-417a-b36c-79a099566af1",
           "title": "Coercing unknown types",
           "fullFile": "/Users/alchem01/dev/tutorials/typescript/ts-tutorial/src/typingErrorsInTryCatch.ts",
           "file": "/src/typingErrorsInTryCatch.ts",
@@ -511,15 +550,15 @@
               "context": null,
               "code": "expect(tryCatchDemo(\"fail\")).to.be.equal(\"Failure!\");",
               "err": {},
-              "uuid": "e0343ad4-0bc2-4b29-a94a-e963458647a1",
-              "parentUUID": "7f0a9257-f6ff-4ed5-9a75-f7788b174eea",
+              "uuid": "d72917f4-b5ca-43cd-ba17-6580852b451c",
+              "parentUUID": "1d32264e-62f7-417a-b36c-79a099566af1",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "e0343ad4-0bc2-4b29-a94a-e963458647a1"
+            "d72917f4-b5ca-43cd-ba17-6580852b451c"
           ],
           "failures": [],
           "pending": [],
@@ -531,26 +570,26 @@
         }
       ],
       "passes": [
-        "1746a083-0ad5-4bb7-aae3-08820333a73a",
-        "c7f8db4d-0918-4c97-a773-16bf2d3128d4",
-        "45d173a6-5a00-400b-8f87-8c0047f553c3",
-        "2cdca68e-c947-4b7d-a295-03e6ef002a89",
-        "70fb6dc1-76c0-4719-98a1-fc21ce40b6cb",
-        "2fed2a1e-6510-48f4-a385-7047ea9a13c9",
-        "b8b3c08c-c298-43d8-910f-9d1b27db9400",
-        "b64045d3-4b66-42fa-9917-1e9a10873680",
-        "86b6ef8d-9361-43de-b821-eb3ae3e7a6ea",
-        "f69cdb23-3111-4f10-97ab-2fc5ab64c21a",
-        "6683d22b-ce66-4557-bbdc-7fc79f680c37",
-        "08a3e181-f89a-4db0-aa05-ca0adbb78775",
-        "1d65eb40-887d-4cd0-a631-ab267101a1f3",
-        "0aeb6016-944f-4cfc-900a-a524b0fe8a6c",
-        "b0da032a-5abd-42be-b8be-f64c8321aa25"
+        "da07cf70-96ca-45e6-aec6-651a0c69579f",
+        "14806438-b603-41ca-a2f9-cc651b011711",
+        "7f6285ef-d7f4-455a-939a-ae0c7ed7ce02",
+        "28fa1344-b6b6-499c-882f-c649f255012b",
+        "715702cd-bd69-483f-b39d-64083c537dcd",
+        "d5e4be68-495b-4d05-b823-15754d35c125",
+        "004d16d5-9636-475b-899b-a44fd9ef61a9",
+        "7adea454-e40d-454d-8b56-32543fec0ad5",
+        "47a32676-6bbd-4e7e-a2b7-0d57faa96e78",
+        "e52cc76b-1df5-4a6a-8bfa-7ce1ee5a8720",
+        "c55aa476-1fa1-4f25-aa34-e93fc63680a2",
+        "1cfc772d-8597-435d-975d-c9862136292a",
+        "25e12f1c-7514-4a1b-a6bc-5125d82ccfb0",
+        "7638d30c-0195-4b4c-b323-2bd2d7898701",
+        "f7729761-fabd-4730-879b-5e1762a01ce4"
       ],
       "failures": [],
       "pending": [],
       "skipped": [],
-      "duration": 0,
+      "duration": 2,
       "root": true,
       "rootEmpty": false,
       "_timeout": 10000

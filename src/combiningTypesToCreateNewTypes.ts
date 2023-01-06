@@ -4,7 +4,6 @@ Your challenge is to update the return type for the function so that it is both 
 and { posts: Post[] }.
 */
 
-import { type } from "os";
 
 
 interface User {
@@ -25,7 +24,7 @@ type UserAndPosts1 = User & { posts: Post[] } & {age: number} //another way to d
    * How do we type this return statement so it's both
    * User AND { posts: Post[] }
    */
-  export const getDefaultUserAndPosts = (): User & {posts: Post[]} => { // this is another way to do it
+  const getDefaultUserAndPosts = (): User & {posts: Post[]} => { // this is another way to do it
     return {
       id: "1",
       firstName: "Matt",
@@ -33,7 +32,7 @@ type UserAndPosts1 = User & { posts: Post[] } & {age: number} //another way to d
       posts: [
         {
           id: "1",
-          title: "How I eat so much cheese",
+          title: "How I eat so much chocolate",
           body: "It's pretty edam difficult",
         },
       ],
