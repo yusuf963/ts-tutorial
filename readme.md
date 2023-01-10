@@ -1,5 +1,7 @@
 ## TypeScript official website
 https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html
+## tsconfig file reference
+https://www.typescriptlang.org/tsconfig
 
 
 ## TypeScript official github
