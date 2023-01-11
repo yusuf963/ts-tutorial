@@ -30,6 +30,7 @@ export const fetchLukeSkywalkerX = async () => {
     const data: LukeSkywalker = await fetch("https://swapi.dev/api/people/1").then((res) => {
     return res.json();
     });
+    console.log(data)
 
     return data as LukeSkywalker; // casting data as LukeSkywalker
 };

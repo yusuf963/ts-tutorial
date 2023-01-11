@@ -1,0 +1,19 @@
+{
+    "printWidth": 100,
+    "tabWidth": 4,
+    "trailingComma": "es5",
+    "semi": true,
+    "singleQuote": true,
+    "jsxSingleQuote": false,
+    "bracketSpacing": true
+}
+
+
+```
+install eslint-config-prettier and eslint-plugin-prettier as
+ devDependencies in your project and add this to 
+ your .eslintrc.json
+{
+  "extends": ["prettier", "prettier/@typescript-eslint"],
+}
+```
