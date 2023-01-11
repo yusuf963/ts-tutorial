@@ -30,3 +30,6 @@ type MyReturnType<T extends (...args: any[]) => any> = T extends (
     : any;
 
 type MyReturnTypeX<T extends (...args: any[]) => any> = T extends () => infer R? R : any;
+
+//example of using the keyword infer
+type MyReturnTypeY<T extends (...args: any[]) => any> = T extends (...args: any[]) => infer R? R : any;

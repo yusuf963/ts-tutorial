@@ -13,6 +13,8 @@ https://github.com/microsoft/TypeScript
 https://github.com/total-typescript/beginners-typescript-tutorial/tree/main/src
 
 https://www.totaltypescript.com/tutorials/beginners-typescript/passing-type-arguments/solution
+
+https://www.youtube.com/watch?v=a_m7jxrTlaw&list=PLIvujZeVDLMx040-j1W4WFs1BxuTGdI_b&index=3
 ## Other tutorials from Matt Pocock
 ### type transformations-workshop
 https://github.com/total-typescript/type-transformations-workshop/tree/main/src
