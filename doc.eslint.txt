@@ -1,0 +1,14 @@
+To make ESLint ignore TypeScript's type annotations, you will need to install the @typescript-eslint/parser and @typescript-eslint/eslint-plugin packages.
+Then in your .eslintrc.json file, you need to add "@typescript-eslint/parser" as a parser and "@typescript-eslint/eslint-plugin" as a plugin.
+You can also configure rules in your .eslintrc.json file to handle the TypeScript-specific syntax.
+For example:
+
+{
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint"],
+    "rules": {
+        "@typescript-eslint/explicit-function-return-type": "off"
+    }
+}
+This will turn off the error for explicit-function-return-type, so eslint will not complain about typescript's type annotations.
+You can also turn off all the typescript-eslint rules by adding "extends": ["plugin:@typescript-eslint/eslint-recommended"] to your .eslintrc.json file.
