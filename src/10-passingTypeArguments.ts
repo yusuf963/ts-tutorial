@@ -2,11 +2,26 @@
 Challenge
 Your challenge is to update guitarists to be typed a set of strings.
 */
-
 import { expect } from "chai";
 import { it } from "mocha";
 
 type setType = string[] | number[] | {}[];
+
+type myType<T> = Record<string, T>;
+
+const ok: myType<string> = {
+  a: "string",
+};
+
+const myObj1: myType<string> = {
+  c: "string",
+};
+const myObj2: myType<number> = {
+  b: 1,
+};
+const myObj3: myType<boolean> = {
+  a: true,
+};
 
 const guitarists = new Set<any>();
 const guitaristsX = new Set<{}[]>();

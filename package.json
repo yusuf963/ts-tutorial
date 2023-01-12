@@ -9,7 +9,9 @@
     "comp": "npx tsc",
     "dev": "nodemon --exec ts-node src/index.ts",
     "test": "mocha --exit --timeout 10000 --reporter mochawesome --reporter-options reportDir=__test-report__,reportFilename=api-test-report,reportTitle=API-Test-Report,inlineAssets=true",
-    "coverage": "nyc mocha --exit --timeout 10000 --reporter mochawesome --reporter-options reportDir=__test-report__,reportFilename=api-test-report,reportTitle=API-Test-Report,inlineAssets=true"
+    "coverage": "nyc mocha --exit --timeout 10000 --reporter mochawesome --reporter-options reportDir=__test-report__,reportFilename=api-test-report,reportTitle=API-Test-Report,inlineAssets=true",
+    "format": "prettier --write \"**/*.{js,ts,tsx,json,md}\"",
+    "lint": "eslint --ext .ts,.tsx,.js ."
   },
   "repository": {
     "type": "git",
@@ -31,6 +33,7 @@
     "typescript": "^4.9.4"
   },
   "dependencies": {
+    "prettier": "^2.8.2",
     "type-regex": "file:type-regex-1.0.0.tgz"
   }
 }

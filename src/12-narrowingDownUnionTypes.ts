@@ -25,6 +25,5 @@ describe("Narrowing down union types", () => {
   });
 });
 
-
 // point to note: typeof amount === "object" && amount.amount
 // so you can narrow down union type with the help of type of.

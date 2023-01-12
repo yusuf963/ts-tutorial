@@ -10,37 +10,37 @@ import { expect } from "chai";
 import { it } from "mocha";
 
 interface User {
-    id: string;
-    firstName: string;
-    lastName: string;
-  }
-  
-  const createThenGetUser = async (
-    createUser: () => Promise<string>,
-    getUser: (id: string) => Promise<User>,
-  ): Promise<User> => {
-    const userId: string = await createUser();
-  
-    const user = await getUser(userId);
-  
-    return user;
-  };
+  id: string;
+  firstName: string;
+  lastName: string;
+}
+
+const createThenGetUser = async (
+  createUser: () => Promise<string>,
+  getUser: (id: string) => Promise<User>
+): Promise<User> => {
+  const userId: string = await createUser();
+
+  const user = await getUser(userId);
+
+  return user;
+};
 
 describe("Typing async function", () => {
-    it("Should create the user, then get them", async () => {
-        const user = await createThenGetUser(
-          async () => "123",
-          async (id) => ({
-            id,
-            firstName: "Matt",
-            lastName: "Pocock",
-          }),
-        );
-      
-        expect(user).to.deep.equal({
-          id: "123",
-          firstName: "Matt",
-          lastName: "Pocock",
-        });
-      });
+  it("Should create the user, then get them", async () => {
+    const user = await createThenGetUser(
+      async () => "123",
+      async (id) => ({
+        id,
+        firstName: "Matt",
+        lastName: "Pocock",
+      })
+    );
+
+    expect(user).to.deep.equal({
+      id: "123",
+      firstName: "Matt",
+      lastName: "Pocock",
+    });
+  });
 });

@@ -1,10 +1,9 @@
-
 const myFunct = () => {
-  return ()=>{
+  return () => {
     return {
-        name: 'test',
-        age: 10
-    }
+      name: "test",
+      age: 10,
+    };
   };
 };
 /**
@@ -12,7 +11,7 @@ const myFunct = () => {
  * @param {Function} myFunct
  * @example
  * @deprecated
- * 
+ *
  * the below type is infering the retunr type of a given function
  * ReturnType is a global and generic type in typescript
  * if we change the return type of myFunct to string, the type of FuncResult will be string
@@ -21,15 +20,19 @@ const myFunct = () => {
  */
 type FuncResult = ReturnType<typeof myFunct>;
 
-
-
 type MyReturnType<T extends (...args: any[]) => any> = T extends (
-    ...args: any[]
-  ) => infer R
-    ? R
-    : any;
+  ...args: any[]
+) => infer R
+  ? R
+  : any;
 
-type MyReturnTypeX<T extends (...args: any[]) => any> = T extends () => infer R? R : any;
+type MyReturnTypeX<T extends (...args: any[]) => any> = T extends () => infer R
+  ? R
+  : any;
 
 //example of using the keyword infer
-type MyReturnTypeY<T extends (...args: any[]) => any> = T extends (...args: any[]) => infer R? R : any;
+type MyReturnTypeY<T extends (...args: any[]) => any> = T extends (
+  ...args: any[]
+) => infer R
+  ? R
+  : any;

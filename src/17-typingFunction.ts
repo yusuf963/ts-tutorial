@@ -10,21 +10,20 @@ import { Equal, Expect } from "./helpers/type-utils";
  * How do we type onFocusChange?
  */
 
-interface CallOrConstruct { // another way interface for function 
-    (n?: boolean): boolean;
-  }
+interface CallOrConstruct {
+  // another way interface for function
+  (n?: boolean): boolean;
+}
 
-const addListener = (onFocusChange: (isFoucsed: boolean)=> void) => { // pass arg to the inner function and return void of it
+const addListener = (onFocusChange: (isFoucsed: boolean) => void) => {
+  // pass arg to the inner function and return void of it
   // window.addEventListener("focus", () => { // comment out this line because it will give error as I am on node and not on browser
   //   onFocusChange(true);
   // });
-
   // window.addEventListener("blur", () => { // comment out this line because it will give error as I am on node and not on browser
   //   onFocusChange(false);
   // });
 };
-
-
 
 addListener((isFocused) => {
   console.log({ isFocused });
