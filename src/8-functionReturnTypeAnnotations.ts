@@ -25,29 +25,28 @@ interface Post {
  * How do we ensure that makeUser ALWAYS
  * returns a user?
  */
-const makeUser = ():User => {
+const makeUser = (): User => {
   return {
     id: 1,
     firstName: "Matt",
     lastName: "Pocock",
     role: "admin",
     posts: [
-        {
-            id: 1,
-            title: "How I eat so much cheese",
-        },
-    ]
+      {
+        id: 1,
+        title: "How I eat so much cheese",
+      },
+    ],
   };
 };
 
 const user = makeUser();
 
 it("Should user has property of lastName", () => {
-    expect(user).to.have.property("lastName");
+  expect(user).to.have.property("lastName");
 });
 
 it("Should return a valid user", () => {
-
   expect(user.id).to.be.a("number");
   expect(user.firstName).to.be.a("string");
   expect(user.lastName).to.be.a("string");
@@ -57,8 +56,6 @@ it("Should return a valid user", () => {
   expect(user.posts[0].title).to.be.a("string");
 });
 
-
 it("Should return a valid user admin value", () => {
-    expect(user.role).to.be.oneOf(['admin']);
+  expect(user.role).to.be.oneOf(["admin"]);
 });
-

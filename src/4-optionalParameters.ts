@@ -7,9 +7,9 @@ import assert from "assert";
 import { expect } from "chai";
 import { it } from "mocha";
 
-export const getName = (first: string, last?: string, ...arg:string[]) => {
-  if (arg.length === 0 && !last) return first
-  if (last && arg.length=== 0) return `${first} ${last}`
+export const getName = (first: string, last?: string, ...arg: string[]) => {
+  if (arg.length === 0 && !last) return first;
+  if (last && arg.length === 0) return `${first} ${last}`;
   return `${first} ${last} ${arg}`;
 };
 
@@ -24,9 +24,8 @@ it("Should work with the first and last name", () => {
   expect(name).to.deep.equal("Matt Pocock");
 });
 
-
 it("Should work with the first and last name and ..arg", () => {
-    const name = getName("Matt", "Pocock", "a", "b", "c");
+  const name = getName("Matt", "Pocock", "a", "b", "c");
 
-    assert.equal(name, "Matt Pocock a,b,c");
-  });
+  assert.equal(name, "Matt Pocock a,b,c");
+});

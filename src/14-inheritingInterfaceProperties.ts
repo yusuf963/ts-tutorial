@@ -17,7 +17,7 @@ import { Equal, Expect } from "./helpers/type-utils";
  */
 
 interface Base {
-    id: string;
+  id: string;
 }
 interface User extends Base {
   firstName: string;
@@ -29,13 +29,13 @@ interface Post extends Base {
   body: string;
 }
 
-interface Commt extends Base{
+interface Commt extends Base {
   comment: string;
 }
-const testingType:Commt = {comment: 'ok', id: 'ok'}
+const testingType: Commt = { comment: "ok", id: "ok" };
 
 type tests = [
   Expect<Equal<User, { id: string; firstName: string; lastName: string }>>,
   Expect<Equal<Post, { id: string; title: string; body: string }>>,
-  Expect<Equal<Commt, { id: string; comment: string }>>,
+  Expect<Equal<Commt, { id: string; comment: string }>>
 ];

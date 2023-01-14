@@ -1,1 +1,1 @@
-declare module 'mocha';
+declare module "mocha";

@@ -1,21 +1,29 @@
 {
-    "diff": true,
-    "slow": "75",
-    "timeout": "2000",
-    "extension": ["ts", "cjs", "mjs"],
-    "watch-files": ["__test__/**/*.js"],
-    "watch-ignore": ["lib/vendor"],
-    "spec": "src/**.ts",
-    "node-option": [
-      "experimental-specifier-resolution=node",
-      "loader=ts-node/esm"
-    ],
-    "ignore": ["node_modules", "dist", "swaggers", "seeds", "migrations", ".devcontainer", ".vscode"],
-    "testEnvironment": "node",
-    "reporter":"mochawesome",
-    "reporterOptions": {
-      "reportDir":"customReportDir",
-      "reportFilename": "customReportFilename",
-      "quiet": true
+  "diff": true,
+  "slow": "75",
+  "timeout": "2000",
+  "extension": ["ts", "cjs", "mjs"],
+  "watch-files": ["__test__/**/*.js"],
+  "watch-ignore": ["lib/vendor"],
+  "spec": "src/**.ts",
+  "node-option": [
+    "experimental-specifier-resolution=node",
+    "loader=ts-node/esm"
+  ],
+  "ignore": [
+    "node_modules",
+    "dist",
+    "swaggers",
+    "seeds",
+    "migrations",
+    ".devcontainer",
+    ".vscode"
+  ],
+  "testEnvironment": "node",
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "customReportDir",
+    "reportFilename": "customReportFilename",
+    "quiet": true
   }
 }
