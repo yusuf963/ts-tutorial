@@ -1,10 +1,10 @@
 const myFunct = () => {
-  return () => {
-    return {
-      name: "test",
-      age: 10,
+    return () => {
+        return {
+            name: 'test',
+            age: 10,
+        };
     };
-  };
 };
 /**
  * @author
@@ -20,19 +20,13 @@ const myFunct = () => {
  */
 type FuncResult = ReturnType<typeof myFunct>;
 
-type MyReturnType<T extends (...args: any[]) => any> = T extends (
-  ...args: any[]
-) => infer R
-  ? R
-  : any;
+type MyReturnType<T extends (...args: any[]) => any> = T extends (...args: any[]) => infer R
+    ? R
+    : any;
 
-type MyReturnTypeX<T extends (...args: any[]) => any> = T extends () => infer R
-  ? R
-  : any;
+type MyReturnTypeX<T extends (...args: any[]) => any> = T extends () => infer R ? R : any;
 
 //example of using the keyword infer
-type MyReturnTypeY<T extends (...args: any[]) => any> = T extends (
-  ...args: any[]
-) => infer R
-  ? R
-  : any;
+type MyReturnTypeY<T extends (...args: any[]) => any> = T extends (...args: any[]) => infer R
+    ? R
+    : any;
