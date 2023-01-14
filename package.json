@@ -11,7 +11,7 @@
     "test": "mocha --exit --timeout 10000 --reporter mochawesome --reporter-options reportDir=__test-report__,reportFilename=api-test-report,reportTitle=API-Test-Report,inlineAssets=true",
     "coverage": "nyc mocha --exit --timeout 10000 --reporter mochawesome --reporter-options reportDir=__test-report__,reportFilename=api-test-report,reportTitle=API-Test-Report,inlineAssets=true",
     "format": "prettier --write \"**/*.{js,ts,tsx,json,md}\"",
-    "lint": "eslint --ext .ts,.tsx,.js ."
+    "lint": "eslint --ext .ts,.tsx ."
   },
   "repository": {
     "type": "git",
@@ -33,6 +33,9 @@
     "typescript": "^4.9.4"
   },
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "@typescript-eslint/parser": "^5.48.1",
+    "eslint": "^8.31.0",
     "prettier": "^2.8.2",
     "type-regex": "file:type-regex-1.0.0.tgz"
   }
