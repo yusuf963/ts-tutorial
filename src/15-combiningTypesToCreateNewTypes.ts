@@ -5,15 +5,15 @@ and { posts: Post[] }.
 */
 
 interface User {
-  id: string;
-  firstName: string;
-  lastName: string;
+    id: string;
+    firstName: string;
+    lastName: string;
 }
 
 interface Post {
-  id: string;
-  title: string;
-  body: string;
+    id: string;
+    title: string;
+    body: string;
 }
 [];
 
@@ -24,19 +24,19 @@ type UserAndPosts1 = User & { posts: Post[] } & { age: number }; //another way t
  * User AND { posts: Post[] }
  */
 const getDefaultUserAndPosts = (): User & { posts: Post[] } => {
-  // this is another way to do it
-  return {
-    id: "1",
-    firstName: "Matt",
-    lastName: "Pocock",
-    posts: [
-      {
-        id: "1",
-        title: "How I eat so much chocolate",
-        body: "It's pretty edam difficult",
-      },
-    ],
-  };
+    // this is another way to do it
+    return {
+        id: '1',
+        firstName: 'Matt',
+        lastName: 'Pocock',
+        posts: [
+            {
+                id: '1',
+                title: 'How I eat so much chocolate',
+                body: "It's pretty edam difficult",
+            },
+        ],
+    };
 };
 
 const userAndPosts = getDefaultUserAndPosts();

@@ -5,20 +5,20 @@ Similar to a previous challenge, we want TypeScript to show us error messages on
 
 Your challenge is to annotate the makeUser function to make sure it always returns a User.
 */
-import { expect } from "chai";
-import { it } from "mocha";
+import { expect } from 'chai';
+import { it } from 'mocha';
 
 interface User {
-  id: number;
-  firstName: string;
-  lastName: string;
-  role: "admin" | "user" | "super-admin";
-  posts: Array<Post>;
+    id: number;
+    firstName: string;
+    lastName: string;
+    role: 'admin' | 'user' | 'super-admin';
+    posts: Array<Post>;
 }
 
 interface Post {
-  id: number;
-  title: string;
+    id: number;
+    title: string;
 }
 
 /**
@@ -26,36 +26,36 @@ interface Post {
  * returns a user?
  */
 const makeUser = (): User => {
-  return {
-    id: 1,
-    firstName: "Matt",
-    lastName: "Pocock",
-    role: "admin",
-    posts: [
-      {
+    return {
         id: 1,
-        title: "How I eat so much cheese",
-      },
-    ],
-  };
+        firstName: 'Matt',
+        lastName: 'Pocock',
+        role: 'admin',
+        posts: [
+            {
+                id: 1,
+                title: 'How I eat so much cheese',
+            },
+        ],
+    };
 };
 
 const user = makeUser();
 
-it("Should user has property of lastName", () => {
-  expect(user).to.have.property("lastName");
+it('Should user has property of lastName', () => {
+    expect(user).to.have.property('lastName');
 });
 
-it("Should return a valid user", () => {
-  expect(user.id).to.be.a("number");
-  expect(user.firstName).to.be.a("string");
-  expect(user.lastName).to.be.a("string");
-  expect(user.role).to.be.oneOf(["super-admin", "admin", "user", "dw"]);
+it('Should return a valid user', () => {
+    expect(user.id).to.be.a('number');
+    expect(user.firstName).to.be.a('string');
+    expect(user.lastName).to.be.a('string');
+    expect(user.role).to.be.oneOf(['super-admin', 'admin', 'user', 'dw']);
 
-  expect(user.posts[0].id).to.be.a("number");
-  expect(user.posts[0].title).to.be.a("string");
+    expect(user.posts[0]!.id).to.be.a('number');
+    expect(user.posts[0].title).to.be.a('string'); // ! is a non-null assertion operator. It tells TypeScript that the value is not null or undefined.
 });
 
-it("Should return a valid user admin value", () => {
-  expect(user.role).to.be.oneOf(["admin"]);
+it('Should return a valid user admin value', () => {
+    expect(user.role).to.be.oneOf(['admin']);
 });
