@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# Set the threshold for branch age (in days)
+threshold=90 # 90 days
+
+# Fetch all branches from remote
+git fetch --all --prune
+
+# Loop through all remote branches
+for branch in $(git branch -r | grep -v '\->'); do
+  # Check if the branch is not the "master" branch
+  if [[ "$branch" != "origin/master" ]]; then
+    # Get the date of the last commit on the branch
+    date=$(git log -1 --pretty=format:'%at' $branch)
+    # Get the current date
+    curdate=$(date +%s)
+    # Get the age of the branch (in days)
+    age=$(( (curdate - date) / 86400 ))
+    # Check if the branch is older than the threshold
+    if [[ $age -gt $threshold ]]; then
+      # Delete the branch
+      git push origin --delete $branch
+      echo "Deleted remote branch: $branch (age: $age days)"
+    fi
+  fi
+done
+
+# Please note that this script will delete all remote branches that are older than 90 days, except for the "master" branch,
+# so please double-check the branches and use it with caution.
+
+# Also, this script assumes that you have access to the remote repository and are able to push to it.
+# Please make sure you have the correct permissions and access to the remote repository, otherwise you will get permission denied error.
